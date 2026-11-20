@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Events | CampusConnect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="events">
+    <header class="site-header" id="site-header"></header>
+    <section class="page-banner">
+        <div class="container">
+            <h1>College Events</h1>
+            <p>Find and register for what's happening on campus.</p>
+        </div>
+    </section>
+    <main class="section">
+        <div class="container">
+            <div class="toolbar"><input class="search" id="search" type="search" placeholder="Search events..."
+                    aria-label="Search events">
+                <div class="filters"><button class="chip active" data-cat="all">All</button><button class="chip"
+                        data-cat="tech">Tech</button><button class="chip" data-cat="cultural">Cultural</button><button
+                        class="chip" data-cat="sports">Sports</button><button class="chip"
+                        data-cat="workshop">Workshops</button></div>
+            </div>
+            <div class="grid" id="event-grid"></div>
+        </div>
+    </main>
+    <footer class="site-footer" id="site-footer"></footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

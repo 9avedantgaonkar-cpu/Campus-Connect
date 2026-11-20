@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Register | CampusConnect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="register">
+    <header class="site-header" id="site-header"></header>
+    <main class="auth">
+        <div class="auth-box">
+            <h1>Create Account</h1>
+            <p class="meta">Join CampusConnect with your college email.</p>
+            <form data-validate novalidate>
+                <div class="field"><label for="name">Full Name</label><input id="name" required><span
+                        class="error"></span></div>
+                <div class="field"><label for="email">College Email</label><input id="email" type="email" required
+                        placeholder="you@college.edu"><span class="error"></span></div>
+                <div class="two">
+                    <div class="field"><label for="dept">Department</label><select id="dept" required>
+                            <option value="">Select</option>
+                            <option>Computer Engineering</option>
+                            <option>Information Technology</option>
+                            <option>Electronics</option>
+                            <option>Mechanical</option>
+                        </select><span class="error"></span></div>
+                    <div class="field"><label for="sem">Semester</label><select id="sem" required>
+                            <option value="">Select</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                        </select><span class="error"></span></div>
+                </div>
+                <div class="field"><label for="pw">Password</label><input id="pw" name="password" type="password"
+                        required><button type="button" class="toggle">Show</button><span class="error"></span></div>
+                <div class="field"><label for="cf">Confirm Password</label><input id="cf" name="confirm" type="password"
+                        required><span class="error"></span></div>
+                <br><button class="btn btn-block" type="submit">Register</button>
+                <div class="msg"></div>
+            </form>
+            <p class="alt-link">Already registered? <a href="login.html">Login</a></p>
+        </div>
+    </main>
+    <footer class="site-footer" id="site-footer"></footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Dashboard | CampusConnect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="dashboard">
+    <header class="site-header" id="site-header"></header>
+    <div class="dash">
+        <aside class="sidebar"><a class="active" href="dashboard.html">Overview</a><a href="events.html">Browse
+                Events</a><a href="dashboard.html#registered">My Registrations</a><a href="index.html">Home</a><a
+                href="login.html">Logout</a></aside>
+        <main class="dash-main">
+            <h1>Welcome back, Student!</h1>
+            <div class="profile mt">
+                <div class="avatar">S</div>
+                <div>
+                    <h3>Student Name</h3>
+                    <p class="meta">Computer Engineering · Semester 3 · student@college.edu</p>
+                </div>
+            </div>
+            <h2>Statistics</h2>
+            <div class="grid">
+                <div class="stat-card"><strong id="stat-total">0</strong>Registered Events</div>
+                <div class="stat-card"><strong>3</strong>Upcoming</div>
+                <div class="stat-card"><strong>5</strong>Attended</div>
+                <div class="stat-card"><strong>2</strong>Certificates</div>
+            </div>
+            <h2>Upcoming Events</h2>
+            <div id="d-upcoming" class="dates"></div>
+            <h2 id="registered">Recently Registered</h2>
+            <div id="d-recent"></div>
+            <h2>Announcements</h2>
+            <div id="d-notices"></div>
+        </main>
+    </div>
+    <footer class="site-footer" id="site-footer"></footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
